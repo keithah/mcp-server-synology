@@ -54,7 +54,7 @@ jobs:
             || github.event.issue.author_association == 'MEMBER'
             || github.event.issue.author_association == 'COLLABORATOR'))
       )
-    runs-on: ubuntu-latest
+    runs-on: ubicloud-standard-2
     steps:
       - name: Resolve PR head SHA on issue_comment
         id: pr-ref
